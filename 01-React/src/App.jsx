@@ -1,12 +1,13 @@
 import Header from './Header'
 import './App.css'
-import TodayDate from './TodayDate'
+import TodayDate from './TodoList'
+import TodoList from './TodoList'
 
 function App() {
 
   return (
     <>
-    <TodayDate/>
+    <TodoList/>
     <Header/>
     <Header/>
     <Header/>
