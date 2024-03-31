@@ -7,6 +7,7 @@ function App() {
     <>
       <Card img = {img1} name = "Light Yagami" age = {23} isStudent = {true}/>
       <Card img = {img2} name = "L Lawliet"    age = {25} isStudent = {false}/>
+      <Card />
   
     </>
   );

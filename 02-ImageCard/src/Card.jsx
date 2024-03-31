@@ -1,5 +1,6 @@
 
 import "./App.css";
+import PropTypes from 'prop-types';
 
 //This function returns a single card
 
@@ -16,7 +17,7 @@ import "./App.css";
 //Using Props
 
 
-function Card(props) {
+function Card (props) {
 
   return (
     <div className="container">
@@ -27,6 +28,20 @@ function Card(props) {
     </div>
   );
 }
+
+//prop types - if it will not be as mentioned below then it will throw an 
+Card.propTypes = {
+    name: PropTypes.string,
+    age: PropTypes.number,
+    isStudent: PropTypes.bool,
+    img: PropTypes.string.isRequired, // Require img prop
+  };
+  
+  Card.defaultProps = {
+    name: "Unknown",
+    age: 0,
+    isStudent: false,
+  };
 
 
 export default Card;
