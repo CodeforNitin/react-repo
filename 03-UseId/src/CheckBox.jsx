@@ -35,13 +35,13 @@ function CheckBox() {
         and pass onto different one but this is not good practice instead we add some text after id */}
 
       <div>
-        <label htmlFor={`id-react`}>Are you learning react : </label>
-        <input id={`id-react`} type="checkbox" />
+        <label htmlFor={`${id}-react`}>Are you learning react : </label>
+        <input id={`${id}-react`} type="checkbox" />
       </div>
 
       <div>
-        <label htmlFor={`id-redux`}>Are you learning redux : </label>
-        <input id={`id-redux`} type="checkbox" />
+        <label htmlFor={`${id}-redux`}>Are you learning redux : </label>
+        <input id={`${id}-redux`} type="checkbox" />
       </div>
     </>
   );
