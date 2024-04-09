@@ -26,7 +26,7 @@ function ToggleSwitch() {
       }
 
     // Add transition effect
-    container.style.transition = "background-color margin 0.5s ease-in";
+    container.style.transition = "background-color ease-in";
   };
 
   return (
