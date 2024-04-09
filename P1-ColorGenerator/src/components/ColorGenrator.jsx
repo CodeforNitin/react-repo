@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../index.css";
 
 function ColorGenrator() {
@@ -31,6 +31,16 @@ function ColorGenrator() {
         setTypeOfColor('HEX');
     }
 
+    const handleRandom = ()=>{
+        let val = Math.floor(Math.random()*2);
+
+        if (val == 0) handleHEX();
+        else handleRGB();
+    }
+
+    useEffect(()=>{
+        typeOfColor ==='HEX' ? handleHEX() : handleRGB();
+    },[typeOfColor])
 
   return (
     <div className="container">
@@ -42,6 +52,7 @@ function ColorGenrator() {
         <div>
         <button onClick={handleHEX}>Genrate HEX Color</button>
         <button onClick={handleRGB}>Genrate RGB Color</button>
+        <button onClick={handleRandom}>Generate Random Color</button>
         </div>
 
     </div>
