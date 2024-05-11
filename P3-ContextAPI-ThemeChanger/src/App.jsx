@@ -1,9 +1,12 @@
-function App() {
+import Navbar from './components/Navbar';
+import BookList from './components/BookList';
 
+function App() {
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <div className="App">
+      <Navbar />
+      <BookList />
+    </div>
   )
 }
 
