@@ -13,3 +13,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+span {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.gold{
+  color: gold;
+}
